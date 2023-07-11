@@ -21,13 +21,26 @@
 }
 
 main {
-   display: flex;
+   /* display: flex;
    align-items: center;
 justify-content: center;
 flex-direction: column;
-gap: 5;
-   
+gap: 5; */
+   margin: 0 auto;
+   text-align: center;
 }
+
+.dashboard{
+    order: 1;
+}
+.mainText{
+    order: 2;
+}
+/* .flexbox{
+    display: flex;
+    border: 2px solid red;
+    padding: 0.8rem 1rem;
+} */
 
 footer{
     position: absolute;
