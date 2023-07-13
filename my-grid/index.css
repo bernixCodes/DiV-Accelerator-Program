@@ -4,6 +4,7 @@
     padding: 0;
 }
 
+
 body{
     font-size: 15px;
     /* max-width: 1450px; */
@@ -177,10 +178,14 @@ label{
     font-size: 1.1rem;
 }
 
-.eye{
+.eye, .eyeoff{
     position: absolute;
     right: 1rem;
     bottom: 3px;
+    cursor: pointer;
+}
+.eyeoff{
+    display: none;
 }
 
 .btns{
