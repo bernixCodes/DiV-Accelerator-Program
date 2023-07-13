@@ -56,15 +56,15 @@
                 <img src="./profile.jpg" alt="" class="profile-img"/>
             </div>
 
-            <form>
+            <form class="form" onsubmit="submitForm()">
                <div class="nameInputBox">
                     <div class="nameInput">
                         <label for="fname">First Name</label>
-                        <input type="text" placeholder="Adjoa"/>
+                        <input type="text" id="first_name" placeholder="Adjoa" />
                     </div>
                     <div class="nameInput">
                         <label for="lname">Last Name</label>
-                        <input type="text" placeholder="Ernie"/>
+                        <input type="text" id="last_name" placeholder="Ernie"/>
                     </div>
                </div>
                <div class="emailInput myMargin" >
@@ -111,7 +111,7 @@
 
         <div class="btns">
             <button type="button" class="outline"> Cancel</button>
-            <button type="button"> Save</button>
+            <button type="submit"> Save</button>
         </div>
             </form>
         </div>

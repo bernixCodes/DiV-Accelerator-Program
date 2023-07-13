@@ -6,7 +6,14 @@ const optionsDiv = document.querySelector(".options");
 const mainDiv = document.querySelector(".main");
 const profileDiv = document.querySelector(".profile");
 const container = document.querySelector(".container");
+const firstName = document.getElementById("first_name");
+const form = document.querySelector(".form");
 
+const submitForm = () => {
+  const firstName = document.getElementById("first_name").value;
+  const lastName = document.getElementById("last_name").value;
+  alert("Welcome " + firstName + " " + lastName);
+};
 viewPasscode.addEventListener("click", () => {
   viewPasscodeInput.type = "text";
   unviewPasscode.style.display = "block";
@@ -23,6 +30,4 @@ settingIcon.addEventListener("click", () => {
   optionsDiv.classList.toggle("hideOptionsDiv");
   container.classList.toggle("my");
   mainDiv.classList.toggle("setWidth");
-  //   mainDiv.style.background = "red";
-  //   profileDiv.style.display = "none";
 });
