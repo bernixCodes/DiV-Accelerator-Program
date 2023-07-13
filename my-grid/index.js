@@ -6,8 +6,7 @@ const optionsDiv = document.querySelector(".options");
 const mainDiv = document.querySelector(".main");
 const profileDiv = document.querySelector(".profile");
 const container = document.querySelector(".container");
-const firstName = document.getElementById("first_name");
-const form = document.querySelector(".form");
+
 
 const submitForm = () => {
   const firstName = document.getElementById("first_name").value;
