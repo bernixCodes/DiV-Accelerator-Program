@@ -12,34 +12,112 @@
         <div class="sidebar"> 
            <img src="./logo.jpeg" alt=""  class="logo"/>
            <div class="icons">
-            <span class="material-icons-outlined">
-                home
-                </span>
-                <span class="material-icons-outlined">
-                    notifications
-                    </span>
-                <span class="material-icons-outlined">
-                    content_paste
-                    </span>
-                    <span class="material-icons-outlined">
-                        show_chart
-                        </span>
-                        <span class="material-icons-outlined">
-                            person
-                            </span>
-                            <div class="setting-icon">
-                                <span class="material-icons-outlined setting">
-                                    settings
-                                    </span>
-                               </div>
+                 <span class="material-icons-outlined"> home</span>
+                 <span class="material-icons-outlined">notifications</span>
+                 <span class="material-icons-outlined">content_paste </span>
+                 <span class="material-icons-outlined"> show_chart</span>
+                 <span class="material-icons-outlined"> person </span>
+                 <div class="setting-icon">
+                    <span class="material-icons-outlined setting">settings </span>
+                 </div>          
            </div>
-
-          
-           
         </div>
-        <div class="options">options</div>
-        <div class="main">main</div>
-        <div class="profile">profile</div>
+        <div class="options">
+            <div class="option-header">
+                <span class="material-icons-outlined"> keyboard_arrow_left </span>
+                <h3>settings</h3>
+            </div>
+            <div class="items">
+                <div class="item active" >
+                    <span class="material-icons-outlined">  mode_edit</span>
+                    <h3>Edit profile</h3>
+                </div>
+                <div class="item">
+                    <span class="material-icons-outlined">notifications</span>
+                    <h3>Notifications</h3>
+                </div>
+                <div class="item">
+                    <span class="material-icons-outlined">lock</span>
+                    <h3>Security</h3>
+                </div>
+                <div class="item">
+                    <span class="material-icons-outlined">settings</span>
+                    <h3>Appearance</h3>
+                </div>
+                <div class="item">
+                    <span class="material-icons-outlined">help_outline</span>
+                    <h3>Help</h3>
+                </div>
+            </div>
+        </div>
+        <div class="main">
+            <div class="main_header">
+                <h2>Edit profile</h2>
+                <img src="./profile.jpg" alt="" class="profile-img"/>
+            </div>
+
+            <form>
+               <div class="nameInputBox">
+                    <div class="nameInput">
+                        <label for="fname">First Name</label>
+                        <input type="text" placeholder="Adjoa"/>
+                    </div>
+                    <div class="nameInput">
+                        <label for="lname">Last Name</label>
+                        <input type="text" placeholder="Ernie"/>
+                    </div>
+               </div>
+               <div class="emailInput myMargin" >
+                <label for="lname">Email</label>
+                <input type="text" placeholder="bernyx.owusu@gmail.com"/>
+            </div>
+            <div class="addressInput myMargin" >
+                <label for="lname">Address</label>
+                <input type="text" placeholder="256 Trasacco Estate"/>
+            </div>
+            <div class="contactInput myMargin" >
+                <label for="lname">Contact Number</label>
+                <input type="text" placeholder="59 4010 464"/>
+            </div>
+            <div class="nameInputBox myMargin">
+                <div class="nameInput">
+                    <label for="cities">City</label>
+                    <select name="cities" id="cities">
+                        <option> Akosombo </option>
+                        <option> Legon </option>
+                        <option> Spintex </option>
+                        <option> Rainow </option>
+                        <option> Accra </option>
+                   </select>
+                </div>
+                <div class="nameInput">
+                    <label for="region">State</label>
+                    <select name="region" id="region">
+                        <option> Accra </option>
+                        <option> Eastern </option>
+                        <option> Central </option>
+                        <option> Ashanti </option>
+                        <option> Western </option>
+                   </select>
+                </div>
+               
+           </div>
+           <div class="pssWordInput myMargin" >
+                <label for="lname">Password</label>
+                <input type="password" placeholder="##################"/>
+                <span class="material-icons-outlined eye"> visibility_off </span>
+        </div>
+
+        <div class="btns">
+            <button type="button" class="outline"> Cancel</button>
+            <button type="button"> Save</button>
+        </div>
+            </form>
+        </div>
+        <div class="profile">
+            <span class="material-icons-outlined">notifications</span>
+            <img src="./profile.jpg" alt="" class="profile-img-small"/>
+        </div>
     </div>
 </body>
 </html>
