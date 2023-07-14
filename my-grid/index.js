@@ -9,10 +9,12 @@ const container = document.querySelector(".container");
 
 
 const submitForm = () => {
-  const firstName = document.getElementById("first_name").value;
+  const firstName = document.querySelector("#first_name").value;
   const lastName = document.getElementById("last_name").value;
-  alert("Welcome " + firstName + " " + lastName);
+  // alert("Welcome " + firstName + " " + lastName);
+  alert(`welcome ${firstName}`);
 };
+
 viewPasscode.addEventListener("click", () => {
   viewPasscodeInput.type = "text";
   unviewPasscode.style.display = "block";
