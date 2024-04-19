@@ -1,0 +1,271 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  text-decoration: none;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+}
+
+.alert_info {
+  background-color: #ffb961;
+  color: #464646;
+  padding: 15px 0;
+  text-align: center;
+  font-size: 16px;
+}
+.alert_info p {
+  max-width: 85%;
+  margin: 0 auto;
+}
+
+.nav-container{
+  display: flex;
+ justify-content: space-between;
+ position: sticky;
+ top:0;
+ z-index: 10;
+ background-color: #fff;
+}
+nav {
+  display: flex;
+  text-transform: uppercase;
+  width: 100%;
+  padding-left: 20px;
+  align-items: center;
+ 
+}
+.img-smll{
+  display: none;
+}
+
+.nav_img img {
+  width: 100%;
+  object-fit: cover;
+}
+
+.nav-list{
+  display: flex;
+  width: 100%;
+  justify-content: flex-end;
+      color: #676564;
+}
+
+.header_items {
+  display: flex;
+  width: 75%;
+  text-align: center;
+  justify-content: flex-end;
+}
+
+.header_items .header_item{
+  width: 15%;
+  position: relative;
+}
+
+.header_items .header_item a{
+  color: #9e9d9c;
+  letter-spacing: 3px;
+  font-size: 15px;
+}
+
+.header_items li , .header_cta_item {
+  padding: 20px 0;
+}
+.header_item::after {
+  content: '';
+  position: absolute;
+  background-color: #c2c2bf;
+  color: #464646;
+  right: 0;
+  height: 50%;
+  width: 0.5px;
+}
+
+
+/* .header_item:last-child::after{
+  display: none;
+} */
+
+.header_items li:hover{
+  background-color: #dcdad0;
+ padding: 0;
+ display: flex;
+ align-items: center;
+ justify-content: center;
+}
+.header_items li:hover::after {
+  content: '';
+  position: absolute;
+  background-color: #fedb00;
+  color: #464646;
+  top: 0;
+  height: 3px;
+  width: 100%
+}
+.header_cta{
+  display: flex;
+  align-items: center;
+  width:25%;
+  text-align: center;
+  justify-content: flex-end;
+}
+
+.header_cta_item {
+  width: 40%;
+    letter-spacing: 2px;
+  font-size: 15px;
+}
+
+.header_cta_item:hover{
+  background-color: #ecdd78;
+}
+.header_cta .booking{
+  width: 60%;
+  background-color: #F2F2E5;
+}
+.header_cta .booking a{
+  color: #494A43;
+  padding: 0 2px;
+}
+
+.header_item:hover {
+  background-color: #e4e4dd;
+  color: #464646;
+  border-top: 5px solid #fedb00;
+}
+
+.sub_header {
+  height: 65px;
+  background-color: #F2F2E5;
+}
+
+.tab {
+  width: 70%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+  overflow: hidden;
+  color: #99967c;
+  position: relative;
+}
+
+.tab div {
+  width: 100%;
+  cursor: pointer;
+  padding: 20px 6px;
+  transition: 0.3s;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* .tab div:hover {
+  border-bottom: 4px solid #fedb00;
+} */
+
+.tab div:hover::after{
+  content: '';
+  position: absolute;
+  background-color: #fedb00;
+  color: #464646;
+  bottom: 0;
+  height: 3px;
+  width: 25%
+}
+
+.tab div.active::after{
+  content: '';
+  position: absolute;
+  background-color: #fedb00;
+  bottom: 0;
+  height: 3px;
+  width: 25%;
+}
+
+.tab div.active{
+ color: #323030 !important;
+
+}
+.tabcontent {
+  /* display: none; */
+  padding: 6px 12px;
+}
+
+.tablinks p{
+  font-size: 13px;
+  font-weight: 500;
+  text-transform: uppercase;
+}
+
+.book_car,
+.multi_leg,
+.airport_pickup,
+.book_courier {
+  background-color: red;
+  height: 50vh;
+  width: 60%;
+  margin: 0 auto;
+  margin-top: 30px;
+}
+.multi_leg {
+  background-color: blue;
+}
+.airport_pickup {
+  background-color: greenyellow;
+}
+.book_courier {
+  background-color: burlywood;
+}
+
+@media screen and (min-width: 360px) and (max-width: 1114px) { 
+  .header_items,  .sign-in {
+    display: none;
+  }
+ .booking{
+    width: 100% !important;
+    background-color: #fedb00;
+    padding: 20px 10px;
+  }
+  .img-smll {
+    display: flex !important;
+    width: 100px;
+    height: 50px;
+    object-fit: contain;
+
+  }
+  .nav_img{
+    display: none;
+  }
+ .header_cta_item {
+  width: 100% !important;
+ }
+ nav {
+  align-items: flex-start;
+}
+.header_cta{
+  width: 70%;
+}
+.tab{
+  width: 99%;
+}
+.tablinks p{
+  font-size: 12px;
+}
+.tab div {
+  padding: 18px 6px;
+}
+.book_car,
+.multi_leg,
+.airport_pickup,
+.book_courier {
+  width: 95%;
+}
+
+}

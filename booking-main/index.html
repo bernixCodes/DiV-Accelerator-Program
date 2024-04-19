@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Addison Lee - Booking</title>
+    <link rel="icon" href="./assets/favicon.jpg" />
+    <link rel="stylesheet" href="./home/styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <!-- download app from message -->
+    <div class="alert_info">
+      <p>
+        Need to get there in a hurry? Our average response time in London is 10
+        minutes - Book NOW. For the best booking experiences with Addison Lee,
+        download our App today.
+      </p>
+    </div>
+
+    <div class="nav-container">
+      <nav>
+          <div class="nav_img">
+            <img alt="logo" src="./home/assets/logo.svg" />
+          </div>
+          <!-- small screens -->
+          <div class="img-smll">
+            <img alt="logo" src="./about/images/al.png" />
+          </div>
+         <div class="nav-list">
+            <ul class="header_items">
+              <li class="header_item"><a href="#">Business</a></li>
+              <li class="header_item"><a href="#">Services</a></li>
+              <li class="header_item"><a href="#">Drive </a></li>
+              <li class="header_item"><a href="#">Support</a></li>
+              <li class="header_item"><a href="./about/index.html">About</a></li>
+            </ul>
+           
+          <div class="header_cta">
+            <div class="header_cta_item sign-in"><a href="#">Sign in</a></div>
+            <div class="header_cta_item booking"><a href="#">Make a booking</a></div>
+          </div>
+         </div>
+      </nav>
+    </div>
+
+    <!-- appointment options -->
+    <div class="sub_header">
+      <div class="tab">
+        <div
+          class="tablinks"
+          onclick="openTab(event, 'book_car')"
+          id="defaultOpen"
+        >
+          <p>Book a car</p>
+        </div>
+        <div class="tablinks" onclick="openTab(event, 'multi_leg')">
+          <p>Multi-leg</p>
+        </div>
+        <div class="tablinks" onclick="openTab(event, 'airport_pickup')">
+          <p>Airport pickup</p>
+        </div>
+        <div class="tablinks" onclick="openTab(event, 'book_courier')">
+          <p>Book a courier</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- tab details -->
+    <div id="book_car" class="tabcontent">
+      <div class="book_car">here</div>
+    </div>
+    <div id="multi_leg" class="tabcontent">
+      <div class="multi_leg">here</div>
+    </div>
+    <div id="airport_pickup" class="tabcontent">
+      <div class="airport_pickup">here</div>
+    </div>
+    <div id="book_courier" class="tabcontent">
+      <div class="book_courier">here</div>
+    </div>
+
+    <script src="./home/main.js"></script>
+  </body>
+</html>

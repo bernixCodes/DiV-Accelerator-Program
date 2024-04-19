@@ -1,0 +1,21 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --bg-color: #dae3e7;
+  --section-color: #f5f5f5;
+  --heading-text: #49515a;
+  --bg-icons: #b0b7bf;
+  --btn-color: #1e3a8a;
+}
+
+.dark-mode {
+  --bg-color: #17191c;
+  --section-color: #1e2124;
+  --heading-text: #e9e9ea;
+  --bg-icons: #2e3238;
+  --btn-color: #1e3a8a;
+}

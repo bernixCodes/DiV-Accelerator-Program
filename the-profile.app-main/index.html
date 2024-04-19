@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login Form</title>
+    <link rel="stylesheet" href="./login/index.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="formContainer">
+        <form>
+          <h3 id="loginText">Log in</h3>
+          <div class="inputDiv">
+            <input type="email" placeholder="User email" />
+            
+        <div class="errorContainer">
+            <img src="./assets/danger.gif" alt="" width="30px"/>
+            <p class="error-text">Please enter a valid email address</p>
+        </div>
+
+            <input type="password" placeholder="Password" />
+          </div>
+          <div class="reset">
+            <input type="checkbox" id="reset" name="reset" />
+            <label for="reset">Reset Password</label>
+          </div>
+
+          <button type="button">Sign in</button>
+
+          <div class="extras">
+            <h3>Forgot <span>Username / Password?</span></h3>
+            <h3>Don't have an account? <span>Sign up</span></h3>
+          </div>
+        </form>
+      </div>
+    </div>
+
+    <script src="./login/script.js"></script>
+  </body>
+</html>
